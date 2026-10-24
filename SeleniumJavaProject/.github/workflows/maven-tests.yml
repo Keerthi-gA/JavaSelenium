@@ -15,7 +15,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      - name: Verify repository files
+        run: |
+          pwd
+          ls -la
+          find . -name pom.xml
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
