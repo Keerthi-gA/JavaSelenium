@@ -1,0 +1,6 @@
+target/
+.idea/
+*.class
+*.log
+.env
+/src/test/resources/config.properties
